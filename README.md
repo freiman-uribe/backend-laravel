@@ -50,6 +50,10 @@ Este proyecto permite gestionar docentes y materias, incluyendo funcionalidades 
 ### Docentes
 
 - **Crear docente**: `POST /api/docentes` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
   - Cuerpo de la solicitud:
     ```json
     {
@@ -61,14 +65,26 @@ Este proyecto permite gestionar docentes y materias, incluyendo funcionalidades 
     ```
 
 - **Listar docentes**: `GET /api/docentes` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
   - Parámetros de consulta (opcional):
     ```
     page: número de página (para paginación)
     ```
 
 - **Mostrar docente**: `GET /api/docentes/{id}` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
 
 - **Editar docente**: `PUT /api/docentes/{id}` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
   - Cuerpo de la solicitud:
     ```json
     {
@@ -78,8 +94,16 @@ Este proyecto permite gestionar docentes y materias, incluyendo funcionalidades 
     ```
 
 - **Eliminar docente**: `DELETE /api/docentes/{id}` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
 
 - **Asignar materias a docente**: `POST /api/docentes/{id}/materias` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
   - Cuerpo de la solicitud:
     ```json
     {
@@ -90,6 +114,10 @@ Este proyecto permite gestionar docentes y materias, incluyendo funcionalidades 
 ### Materias
 
 - **Crear materia**: `POST /api/materias` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
   - Cuerpo de la solicitud:
     ```json
     {
@@ -99,14 +127,26 @@ Este proyecto permite gestionar docentes y materias, incluyendo funcionalidades 
     ```
 
 - **Listar materias**: `GET /api/materias` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
   - Parámetros de consulta (opcional):
     ```
     page: número de página (para paginación)
     ```
 
 - **Mostrar materia**: `GET /api/materias/{id}` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
 
 - **Editar materia**: `PUT /api/materias/{id}` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
   - Cuerpo de la solicitud:
     ```json
     {
@@ -116,6 +156,10 @@ Este proyecto permite gestionar docentes y materias, incluyendo funcionalidades 
     ```
 
 - **Eliminar materia**: `DELETE /api/materias/{id}` (Requiere autenticación)
+  - Encabezado:
+    ```
+    Authorization: Bearer {token}
+    ```
 
 ## Estructura del Proyecto
 
